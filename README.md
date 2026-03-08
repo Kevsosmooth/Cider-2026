@@ -4,14 +4,37 @@
 </picture>
 </div>
 <h1 align="center">
-Cider 1
+Cider 2026
 </h1>
 
-> [!WARNING]  
->This project has been archived, and no further updates or support will be provided under any circumstances. We highly recommend switching to [Cider v2](https://cider.sh/downloads/client) for the latest features, improvements, and continued support.  
+A maintained fork of [Cider v1](https://github.com/ciderapp/Cider) — a cross-platform Apple Music client built with [Electron.js](https://electronjs.org), [Vue.js 2](https://vuejs.org), and [Webpack](https://webpack.js.org).
 
-This repository contains the source code for **Cider v1.x**, a cross-platform Apple Music client built from the ground up by the development team.  
+## Download
 
-Cider v1 was developed using [Electron.js](https://electronjs.org), [Vue.js 2](https://vuejs.org), and [Webpack](https://webpack.js.org).  
+Go to the [Actions tab](https://github.com/Kevsosmooth/Cider-2026/actions) and download the latest Windows installer from the build artifacts.
 
-**Note:** While distributions may still be available through various third-party sources, first-party builds are no longer provided due to the high volume of support requests for v1. You can compile it following the [insructions outlined in our legacy documentation](https://cider.sh/docs) from our website. Support will not be provided for compiling.
+## Building from source
+
+### Prerequisites
+- Node.js 20+
+- pnpm (`npm install -g pnpm`)
+- Git
+- Python 3.8+
+
+### Steps
+```bash
+git clone https://github.com/Kevsosmooth/Cider-2026.git
+cd Cider-2026
+pnpm install
+pnpm dist:win
+```
+
+The installer will be in the `dist/` folder.
+
+## License
+
+AGPL-3.0 — see [LICENSE](LICENSE) for details.
+
+## Credits
+
+Original project by [Cider Collective](https://github.com/ciderapp/Cider).

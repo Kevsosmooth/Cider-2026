@@ -1,3 +1,4 @@
+// @ts-ignore
 import Player from 'mpris-service';
 
 export default class mpris {
