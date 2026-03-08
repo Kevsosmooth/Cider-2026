@@ -35,7 +35,6 @@
     "@achingbrain/ssdp": "^4.2.1",
     "@crowdin/ota-client": "^1.1.3",
     "adm-zip": "^0.5.16",
-    "airtunes2": "^2.0.0",
     "castv2-client": "^1.2.0",
     "chokidar": "^3.6.0",
     "discord-auto-rpc": "^1.0.17",

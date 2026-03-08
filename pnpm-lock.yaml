@@ -17,9 +17,6 @@ importers:
       adm-zip:
         specifier: ^0.5.16
         version: 0.5.16
-      airtunes2:
-        specifier: ^2.0.0
-        version: 2.0.0
       castv2-client:
         specifier: ^1.2.0
         version: 1.2.0
@@ -1244,9 +1241,6 @@ packages:
   aggregate-error@3.1.0:
     resolution: {integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==}
     engines: {node: '>=8'}
-
-  airtunes2@2.0.0:
-    resolution: {integrity: sha512-dKrCc3/JdDjXEoKEXvNMaRgwpPm5eFwv2OvvnCzlT+nfqGLZ57mOmOoX+dJYkh150Z1T+Yz9Tr8praH+9Cq2+A==}
 
   ajv-errors@1.0.1:
     resolution: {integrity: sha512-DCRfO/4nQ+89p/RK43i8Ezd41EqdGIU4ld7nGF8OQ14oc/we5rEntLCUa7+jrn3nn83BosfwZA0wb4pon2o8iQ==}
@@ -6617,10 +6611,6 @@ snapshots:
     dependencies:
       clean-stack: 2.2.0
       indent-string: 4.0.0
-
-  airtunes2@2.0.0:
-    dependencies:
-      async: 3.2.6
 
   ajv-errors@1.0.1(ajv@6.14.0):
     dependencies:
