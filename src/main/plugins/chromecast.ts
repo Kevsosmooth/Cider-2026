@@ -5,7 +5,13 @@ import MediaRendererClient from "upnp-mediarenderer-client";
 import request from "request";
 // @ts-expect-error
 import castv2 from "castv2-client";
-import mdnsjs from "mdns-js";
+let mdnsjs: any;
+try {
+  mdnsjs = require("mdns-js");
+} catch {
+  console.warn("mdns-js not available - Chromecast discovery disabled");
+  mdnsjs = null;
+}
 
 export default class ChromecastPlugin {
   /**

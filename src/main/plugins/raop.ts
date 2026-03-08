@@ -2,7 +2,13 @@ import electron from "electron";
 import fetch from "node-fetch";
 import { Stream } from "stream";
 import { Worker } from "worker_threads";
-import mdnsjs from "mdns-js";
+let mdnsjs: any;
+try {
+  mdnsjs = require("mdns-js");
+} catch {
+  console.warn("mdns-js not available - device discovery disabled");
+  mdnsjs = null;
+}
 
 export default class RAOP {
   /**

@@ -1667,7 +1667,13 @@ export class BrowserWindow {
    */
   private async broadcastRemote() {
     const myString = `http://${BrowserWindow.getIP()}:${this.remotePort}`;
-    const mdns = (await import("mdns-js")).default;
+    let mdns: any;
+    try {
+      mdns = (await import("mdns-js")).default;
+    } catch {
+      console.warn("mdns-js not available - remote broadcast disabled");
+      return;
+    }
     const encoded = Buffer.from(myString).toString("base64");
     const x = mdns.tcp("cider-remote");
     const txt_record = {
